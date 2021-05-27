@@ -30,20 +30,70 @@
 
         }
 
+        #banner1 h1::after {
+            background-color: #5333ed;
+            content: " ";
+            height: 3px;
+            width: 15%;
+            margin: 20px auto;
+            display: block;
+
+        }
+
+        #product ul {
+            list-style: none;
+
+        }
+
+        #product ul li a:hover {
+            text-decoration: none;
+
+        }
+
+        #product img {
+            width: 350px;
+            height: 450px;
+            padding-bottom: 15px;
+        }
+
+        #product ul li {
+            display: inline-block;
+            margin: 10px;
+            padding-left: 0px !important;
+
+        }
+
+        .container {
+            padding-left: 0px !important;
+        }
+
+        #product ul li span {
+            color: black;
+        }
+
+        #product ul li {
+            background-color: rgba(0, 0, 0, 0.1);
+
+        }
+
         @media screen and (max-width:415px) and (min-width:411px) {
             .navbar a {
                 font-size: 16px;
             }
-            #Copyright h6{
+
+            #Copyright h6 {
                 font-size: 16px;
             }
-            #banner1 h1{
+
+            #banner1 h1 {
                 font-size: 16px;
             }
-            #banner1 h1{
+
+            #banner1 h1 {
                 font-size: 18px;
                 font-weight: bolder;
             }
+
             #footer a .fa {
                 font-size: 18px;
             }
@@ -66,13 +116,17 @@
         }
 
         @media screen and (max-width:375px) and (min-width: 280px) {
-            #Copyright h6{
+            #Copyright h6 {
                 font-size: 16px;
             }
-            #banner1 h1{
+            #product ul li span {
+            font-size: 16px;
+        }
+            #banner1 h1 {
                 font-size: 18px;
                 font-weight: bolder;
             }
+
             .navbar a {
                 font-size: 16px;
             }
@@ -175,39 +229,13 @@
         }
 
 
-        #product ul {
-            list-style: none;
 
-        }
-
-        #product ul li a:hover {
-            text-decoration: none;
-
-        }
-
-        #product img {
-            width: 350px;
-            height: 450px;
-        }
-
-        #product ul li {
-            display: inline-block;
-            margin: 10px;
-        }
 
         .btn {
             background-color: #5333ed;
         }
 
-        #banner1 h1::after {
-            background-color: #5333ed;
-            content: " ";
-            height: 3px;
-            width: 15%;
-            margin: 20px auto;
-            display: block;
 
-        }
 
         @media screen and (max-width:1190px) and (min-width:280px) {
             #product img {
@@ -298,12 +326,12 @@
 
     </div>
 
-    <div class="container text-center" id="product">
+    <div class="container " id="product">
         <ul>
 
             <li><a href="img/IMG_2202.jpg"><img class="img-fluid" src="img/IMG_2202.jpg" />
                     <br>
-                    <span>"DK kalkata" 10 inche tailor scissor</br><Strong>Price: &#8377;
+                    <span class="pl-1">"DK kalkata" 10 inche tailor scissor</br><Strong>Price: &#8377;
                             310</Strong></span></a>
             </li>
             <li><a href="img/IMG_2291.jpg"><img class="img-fluid" src="img/IMG_2291.jpg" />
