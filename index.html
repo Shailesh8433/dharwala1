@@ -13,7 +13,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -26,6 +30,15 @@
 
 <body onload="myLoad()">
     <style>
+        #slider img {
+            width: 80%;
+
+        }
+
+        #slider p {
+            width: 80%;
+        }
+
         html,
         body {
             margin: 0;
@@ -33,21 +46,28 @@
             overflow-x: hidden;
 
         }
-        #midcontent img{
-            height: 300;
-            width: 300;
+
+        #midcontent img {
+            width: 150px;
+            height: 150px;
+
+            border-radius: 50%;
         }
+
         body {
-            font-family: 'Itim', cursive;
+            font-family: 'Merriweather', serif;
         }
-        #slider p{
+
+        #slider p {
             font-size: 16px;
         }
+
         #Copyright a:hover {
             text-decoration: none;
         }
 
         @media screen and (max-width:667px) and (min-width:568px) and (orientation: landscape) {
+
 
             .navbar a {
                 font-size: 16px;
@@ -83,14 +103,6 @@
                 height: 250px;
             }
 
-            #banner1 {
-                height: 25vh;
-            }
-
-            #banner1 .fa {
-                font-size: 16px;
-            }
-
             #midcontent h1 {
                 font-size: 16px;
                 font-weight: bolder;
@@ -102,26 +114,44 @@
             }
 
             #midcontent img {
-                height: 250px;
-
+                height: 231px;
+                width: 243px;
+                float: left;
             }
 
+            #midcontent p {
+                float: right !important;
+            }
 
         }
 
-        #banner1 {
-            background-image: url(img/hcrop1920x1012@stretch.jpg);
-            height: 40vh;
-            background-size: cover;
 
-        }
 
         @media screen and (max-width:1446px) {
 
 
             #midcontent img {
-                height: 400px;
+                height: 276px;
+                width: 282px;
 
+            }
+
+            #slider img {
+                width: 80%;
+
+            }
+
+            #slider p {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width:990px) and (min-width:769px) {
+
+
+            #midcontent img {
+                height: 273px;
+                width: 271px;
             }
         }
 
@@ -132,36 +162,39 @@
 
 
         #midcontent h2 {
-            font-family: 'Dancing Script', cursive;
+
+
+            font-family: 'Bebas Neue', cursive;
             font-size: 1.3rem;
             margin-top: 15px;
             font-weight: bolder;
+            white-space: 1.5;
 
 
         }
 
         @media screen and (max-width:375px) and (min-width: 280px) {
+
+            #midcontent p {
+                font-size: 16px;
+                letter-spacing: 1.5;
+            }
+
             #slider img {
+                width: 100%;
 
-                height: 350px;
-            }
-            #midcontent p{
-                font-size: 16px;
-            }
-            #sider p{
-                font-size: 16px;
             }
 
-            #banner1 {
-                height: 25vh;
+            #slider p {
+                width: 100%;
+                font-size: 14px !important;
+     
             }
 
-            #banner1 .fa {
-                font-size: 16px;
-            }
+
 
             #midcontent h1 {
-                font-size: 16px;
+                font-size: 16px !important;
                 font-weight: bolder;
             }
 
@@ -171,8 +204,8 @@
             }
 
             #midcontent img {
-                height: 300px;
-
+                height: 219px;
+                width: 217px;
             }
 
             .navbar a {
@@ -201,14 +234,24 @@
         }
 
         @media screen and (max-width:415px) and (min-width:411px) {
+            #midcontent img {
+                height: 219px;
+                width: 217px;
+            }
+
             #slider img {
-                width: 250px;
-                height: 200px;
+                width: 100%;
+
+            }
+
+            #slider p {
+                width: 100%;
+                font-size: 14px !important;
             }
 
             .item p {
                 font-size: 12px;
-                ;
+                
             }
 
             #footer ul li {
@@ -243,10 +286,6 @@
                 font-weight: bolder;
             }
 
-            #midcontent img {
-                height: 300px;
-
-            }
 
             .navbar a {
                 font-size: 16px;
@@ -269,6 +308,9 @@
             }
         }
 
+        #midcontent p {
+            line-height: 1.5;
+        }
 
         #midcontent h1 {
             text-align: center;
@@ -374,39 +416,39 @@
 
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand text-white" href="index.html">DHARWALA.COM</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+                <a class="navbar-brand text-white" href="index.html">DHARWALA.COM</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
 
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="Pricing.html">PRODUCT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="abbout us.html">ABOUT US</a>
-                    </li>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="index.html">HOME <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Pricing.html">PRODUCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="abbout us.html">ABOUT US</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="contact us.html">CONTACT US</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact us.html">CONTACT US</a>
+                        </li>
 
 
-                </ul>
+                    </ul>
 
+                </div>
             </div>
         </nav>
     </header>
-    <div class="text-center" id="banner1">
 
-        <a href="contact us.html"><i class="fa fa-phone"></i>CONTACT US</a>
-    </div>
 
     <div class="container">
 
@@ -458,7 +500,7 @@
 
                     <img class="img-fluid " src="img/IMG_2277.jpg" alt="">
 
-                    <p>Crown blue handel 10 inch tailor scissor</br><Strong>Price: &#8377;
+                    <p>Crown blue 10 inch tailor scissor</br><Strong>Price: &#8377;
                             350</Strong></p>
 
 
@@ -476,11 +518,11 @@
                 Sharpning Services Since 1989</h1>
             <br>
             <div class="row">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="img/seattleknives1_5.png" width="100%">
+                <div class="col-lg-5 col-md-5 text-center mt-4">
+                    <img class="img-fluid" src="img/seattleknives1_5.png">
                 </div>
 
-                <div class=" col-md-6">
+                <div class=" col-lg-7 col-md-7">
                     <h2>
                         know.
                         <br>
@@ -498,19 +540,13 @@
                         Gary's
                         Knife Sharpening Service in order to help serve a growing need in our community.
 
-                        <br>
-                        <br>
-
-                        With you in mind, we have made our service available at your local Farmer's Market and also
-                        provide a mobile service that allows us to greet you at your door.
-
                         ​
                     </p>
                 </div>
             </div>
 
             <div class="row py-4">
-                <div class=" col-md-6 pt-3">
+                <div class="col-lg-7 col-md-7 ">
                     <h2>
 
                         Versatility
@@ -526,19 +562,19 @@
 
                     </p>
                 </div> ​
-                <div class="col-md-6">
-                    <img class="img-fluid" src="img/e3e1dbc32f81482b9c3c575a57fad407.png" width="100%">
+                <div class="col-lg-5 col-md-5 text-center mt-1">
+                    <img class="img-fluid" src="img/e3e1dbc32f81482b9c3c575a57fad407.png" width="25%" height="25">
                 </div>
 
 
             </div>
 
-            <div class=" row">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="img/AdobeStock_226350874.jpeg" width="100%" height="80%">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 text-center mt-1">
+                    <img class="img-fluid" src="img/AdobeStock_226350874.jpeg" width="25%" height="25">
                 </div>
 
-                <div class="col-md-6  responsive">
+                <div class="col-lg-7 col-md-7 responsive">
                     <h2>
 
                         care.
@@ -552,18 +588,11 @@
                         what
                         you need to get the job done.
                         <br>
-                        <br>
+
 
                         A properly cared for tool requires honing on a regular basis and reshaping of the blade in order
                         to
                         brighten it back up to manufacturer specification for ease of use.
-                        <br>
-                        <br>
-
-                        At Gary's Knife Sharpening Service we are available to provide proper care and retooling of your
-                        knives on a regular basis, so that your knives will always be ready to serve you at every
-                        occassion
-                        and for years to come.
 
                         ​
                     </p>
@@ -572,7 +601,7 @@
             <div class=" row pt-3">
 
 
-                <div class="col-md-6">
+                <div class="col-lg-7 col-md-7 ">
                     <div id="text1" class="pt-3">
                         <h2>
                             Become Part Of Our Team.
@@ -584,8 +613,8 @@
                     </div>
 
                 </div>
-                <div class="col-md-6">
-                    <img src="img/WeChat_Image_20181018141448_300x.jpg" class="img-fluid" height="50%" width="100%">
+                <div class="col-lg-5 col-md-5 text-center">
+                    <img src="img/WeChat_Image_20181018141448_300x.jpg" class="img-fluid" width="25%" height="25">
                 </div>
             </div>
         </div>
@@ -625,7 +654,7 @@
             </div>
         </div>
     </div>
-    
+
     <div id="Copyright">
         <div class="col-sm-12 text-center py-2">
 
@@ -657,7 +686,7 @@
             autoplayTimeout: 2000,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2
                 },
                 400: {
                     item: 2
